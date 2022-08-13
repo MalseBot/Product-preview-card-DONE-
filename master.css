@@ -1,0 +1,168 @@
+body{
+    background-color: hsl(33, 46%, 90%);
+}
+/* desktop V */
+@media (min-width: 601px) {
+     .parent {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -240px;
+    margin-left: -300px;
+}
+/* product image */
+.mobile {
+    display:none;
+}
+img{
+width: calc(50% + 30px);
+height: calc(100% + 30px);
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+/* product information */
+.card{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+}
+.type{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%) ;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: hsl(212, 21%, 14%);
+}
+.desc{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%) ;
+}
+.price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+.price::after{
+    content: "$169.99";
+    position: relative;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%) ;
+    text-decoration: line-through;
+    left: 20px;
+    bottom: 5px;
+}
+/* add to cart */
+button{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    left: 5%;
+    top: 7%;
+    padding: 5% 25%;
+    background-color: hsl(158, 36%, 37%);
+    border-color: transparent;
+    border-radius: 5px;
+}
+.cart{
+    padding-right: 20px;
+    position: relative;
+    width: 15px;
+}
+/* hover effects */
+button:hover{
+    background-color:hsl(158, 37%, 23%) ;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 1s;
+} 
+}
+/* Mobile V */
+@media (max-width: 600px) {
+.parent {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -200px;
+}
+.desktop{
+    display: none;
+}
+img{
+    width: 375px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.card{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 345px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+}
+.type{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%) ;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: hsl(212, 21%, 14%);
+}
+.desc{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%) ;
+}
+.price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+.price::after{
+    content: "$169.99";
+    position: relative;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%) ;
+    text-decoration: line-through;
+    left: 20px;
+    bottom: 5px;
+}
+button{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    left: 50%;
+    margin-left: -150px;
+    padding: 5% 25%;
+    background-color: hsl(158, 36%, 37%);
+    border-color: transparent;
+    border-radius: 5px;
+}
+.cart{
+    padding-right: 20px;
+    position: relative;
+    width: 15px;
+}
+button:hover{
+    background-color:hsl(158, 37%, 23%) ;
+    cursor: pointer;
+}
+}
